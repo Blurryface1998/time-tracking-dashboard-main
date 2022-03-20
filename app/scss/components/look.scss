@@ -1,0 +1,140 @@
+@use "../util" as *;
+
+.look {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 80px;
+
+    @media only screen and (min-width:600px) {
+        margin-bottom: 30px;
+        margin-top: 50px;
+        
+    }
+    
+    &__bac {            
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        text-align: right;
+        padding-right: 15px;
+        width: 100%;
+        height: 100%;            
+        position: absolute;
+        top: -48px; 
+
+        &--work {
+            background: var(--lightRed-work);
+        }
+
+        &--play {
+            background: var(--softBlue-play);
+        }
+        
+        &--study {
+            background: var(--lightRed-study);
+        }
+        
+        &--exercise {
+            background: var(--limeGreen-exercise);
+        }
+        
+        &--social {
+            background: var(--violet-social);
+        }
+        
+        &--selfcare {
+            background: var(--softOrange-selfCare);
+        }
+    }
+
+    &__demoss {
+        position: inherit;
+        background: var(--darkBlue);
+        border-radius: 15px;
+        display: grid;
+        grid-template-areas: 
+        "bac bac bac bac"
+        "work one one img"
+        "hours one one week";            
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        line-height: 1.6;
+        cursor: pointer;
+
+        &:hover {
+            background: var(--desaturatedBlue-hover);
+            transition: 0.3s ease;
+        }
+
+        @media only screen and (min-width:600px){
+            grid-template-areas: 
+            "work one one img"
+            "hours hours two two"
+            "time time two two"; 
+            align-items: center;
+            justify-content: center;
+                      
+        }
+
+        .demo {
+            grid-area: work;
+            padding-left: 9px;
+            margin-top: 9px;
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--paleBlue-title);
+
+            @media only screen and (min-width:600px){
+                grid-area: work;
+                text-align: left;
+                margin-bottom: 15px;       
+            }
+        }
+
+        .demo1 {
+            grid-area: hours;
+            padding-left: 9px;
+            font-size: 30px;
+            font-weight: 300;
+            text-align: left;
+            color: var(--paleBlue-title);
+
+            @media only screen and (min-width:600px){
+                grid-area: hours;
+                       
+            }
+        }
+
+        .demo2 {
+            grid-area: img;
+            text-align: right;
+            padding-right: 9px;
+
+            @media only screen and (min-width:600px){
+                grid-area: img;
+                margin-bottom: 12px;
+                margin-left: 40px;       
+            }
+
+            button {
+                background: none;
+                border: none; 
+                cursor: pointer;
+               
+            }
+           
+        }
+
+        .demo3 {
+            grid-area: week;
+            text-align: right;
+            padding-right: 10px;
+
+            @media only screen and (min-width:600px){
+                grid-area: time;
+                padding-left: 10px;
+                margin-bottom: 10px;       
+            }
+        }
+    }
+}
