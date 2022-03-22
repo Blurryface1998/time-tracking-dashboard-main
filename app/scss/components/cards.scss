@@ -1,16 +1,13 @@
-@use "../util" as *;
-
 .card {
     margin: 15px;
 
-
-    @media only screen and (min-width:600px) {
+    @media only screen and (min-width: 1140px) {
         display: grid;
         grid-template-areas: 
         "one two tre for"
         "one five six seve";
         gap: 30px;
-        justify-content: center;
+        justify-content:center;
         align-items: center;
     }
   
@@ -22,7 +19,7 @@
         position: relative;
         margin-bottom: 80px;
 
-        @media only screen and (min-width:600px) {
+        @media only screen and (min-width: 1140px) {
             grid-area: one;
             margin-bottom: 0;
         }
@@ -35,7 +32,7 @@
             border-radius: 15px;
             
 
-            @media only screen and (min-width:600px) {
+            @media only screen and (min-width: 1140px) {
                 padding: 15px;
                 justify-content: right;
                 flex-direction: column;
@@ -50,7 +47,7 @@
                 height: auto;
                 margin: 15px;
 
-                @media only screen and (min-width:600px){
+                @media only screen and (min-width: 1140px){
                     align-self: start;
                     margin-bottom: 40px;   
                 }
@@ -61,7 +58,7 @@
                 text-align: center;
                 font-weight: 400;
 
-                @media only screen and (min-width:600px){
+                @media only screen and (min-width: 1140px){
                     text-align: left;    
                     padding: 15px;
                     
@@ -73,7 +70,7 @@
                 font-weight: 300;
                 color: var(--paleBlue-title);
 
-                @media only screen and (min-width:600px){
+                @media only screen and (min-width: 1140px){
                     text-align: left;
                     font-size: 35px;
                     padding: 0 0 0 15px;
@@ -90,9 +87,10 @@
             justify-content: space-between;
             align-content: center;
 
-            @media only screen and (min-width:600px){
+            @media only screen and (min-width: 1140px){
                 flex-direction: column;
-                height: 35%;       
+                height: 35%;
+                padding: 15px;       
             }
 
             .active {
@@ -111,40 +109,38 @@
         }
     }
 
-    &__work {
-        
-        @media only screen and (min-width:600px) {
+    &__work {        
+        @media only screen and (min-width: 1140px) {
             grid-area: two;
         }
     }
 
     &__play {
-        
-        @media only screen and (min-width:600px) {
+        @media only screen and (min-width: 1140px) {
             grid-area: tre;
         }
     }
 
     &__study {
-        @media only screen and (min-width:600px) {
+        @media only screen and (min-width: 1140px) {
             grid-area: for;
         }
     }
 
     &__exercise {
-        @media only screen and (min-width:600px) {
+        @media only screen and (min-width: 1140px) {
             grid-area: five;
         }
     }
 
     &__social {
-        @media only screen and (min-width:600px) {
+        @media only screen and (min-width: 1140px) {
             grid-area: six;
         }
     }
 
     &__selfcare {
-        @media only screen and (min-width:600px) {
+        @media only screen and (min-width: 1140px) {
             grid-area: seve;
         }
     }

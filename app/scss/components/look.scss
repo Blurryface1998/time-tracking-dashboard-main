@@ -1,17 +1,15 @@
-@use "../util" as *;
-
-.look {
+.grid {
     position: relative;
     margin-top: 25px;
     margin-bottom: 80px;
-
-    @media only screen and (min-width:600px) {
+   
+    @media only screen and (min-width: 1140px) {
         margin-bottom: 30px;
         margin-top: 50px;
         
     }
     
-    &__bac {            
+    &__image {            
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         text-align: right;
@@ -46,7 +44,7 @@
         }
     }
 
-    &__demoss {
+    &__info {
         position: inherit;
         background: var(--darkBlue);
         border-radius: 15px;
@@ -66,7 +64,7 @@
             transition: 0.3s ease;
         }
 
-        @media only screen and (min-width:600px){
+        @media only screen and (min-width: 1140px){
             grid-template-areas: 
             "work one one img"
             "hours hours two two"
@@ -76,7 +74,7 @@
                       
         }
 
-        .demo {
+        .title {
             grid-area: work;
             padding-left: 9px;
             margin-top: 9px;
@@ -84,14 +82,14 @@
             font-weight: 400;
             color: var(--paleBlue-title);
 
-            @media only screen and (min-width:600px){
+            @media only screen and (min-width: 1140px){
                 grid-area: work;
                 text-align: left;
                 margin-bottom: 15px;       
             }
         }
 
-        .demo1 {
+        .time {
             grid-area: hours;
             padding-left: 9px;
             font-size: 30px;
@@ -99,18 +97,18 @@
             text-align: left;
             color: var(--paleBlue-title);
 
-            @media only screen and (min-width:600px){
+            @media only screen and (min-width: 1140px){
                 grid-area: hours;
                        
             }
         }
 
-        .demo2 {
+        .image {
             grid-area: img;
             text-align: right;
             padding-right: 9px;
 
-            @media only screen and (min-width:600px){
+            @media only screen and (min-width: 1140px){
                 grid-area: img;
                 margin-bottom: 12px;
                 margin-left: 40px;       
@@ -120,17 +118,16 @@
                 background: none;
                 border: none; 
                 cursor: pointer;
-               
             }
            
         }
 
-        .demo3 {
+        .prev {
             grid-area: week;
             text-align: right;
             padding-right: 10px;
 
-            @media only screen and (min-width:600px){
+            @media only screen and (min-width: 1140px){
                 grid-area: time;
                 padding-left: 10px;
                 margin-bottom: 10px;       
