@@ -7,6 +7,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -27,6 +28,11 @@ Users should be able to:
 ### Screenshot
 
 ![](images/Screenshot.jpg)
+
+### Links
+
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-grid-iYFYdJbAX)
+- Live Site URL: (https://blurryface1998.github.io/time-tracking-dashboard-main/)
 
 ## My process
 

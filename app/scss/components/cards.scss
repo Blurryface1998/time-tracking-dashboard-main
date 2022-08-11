@@ -6,9 +6,10 @@
         grid-template-areas: 
         "one two tre for"
         "one five six seve";
-        gap: 30px;
+        column-gap: 30px;
         justify-content:center;
         align-items: center;
+        margin: 30px 0 0 0;
     }
   
     &__person {
@@ -21,7 +22,8 @@
 
         @media only screen and (min-width: 1140px) {
             grid-area: one;
-            margin-bottom: 0;
+            width: 90%;
+            margin: 0 auto;
         }
 
         &--top {
@@ -36,7 +38,7 @@
                 padding: 15px;
                 justify-content: right;
                 flex-direction: column;
-                height: 65%;
+                height: 70%;
             }
             
 
@@ -89,7 +91,7 @@
 
             @media only screen and (min-width: 1140px){
                 flex-direction: column;
-                height: 35%;
+                height: 30%;
                 padding: 15px;       
             }
 
@@ -110,40 +112,54 @@
     }
 
     &__work {        
+        margin-bottom: 80px;
         @media only screen and (min-width: 1140px) {
             grid-area: two;
         }
     }
 
     &__play {
+        margin-bottom: 80px;
         @media only screen and (min-width: 1140px) {
             grid-area: tre;
         }
     }
 
     &__study {
+        margin-bottom: 80px;
         @media only screen and (min-width: 1140px) {
             grid-area: for;
         }
     }
 
     &__exercise {
+        margin-bottom: 80px;
         @media only screen and (min-width: 1140px) {
             grid-area: five;
+            margin-bottom: 0 !important;
         }
     }
 
     &__social {
+        margin-bottom: 80px;
         @media only screen and (min-width: 1140px) {
             grid-area: six;
+            margin-bottom: 0 !important;
         }
     }
 
     &__selfcare {
+        
         @media only screen and (min-width: 1140px) {
             grid-area: seve;
+            margin-bottom: 0 !important;
         }
     }
+}
 
+footer {
+    @media only screen and (min-width:1140px) {
+        margin-top: 20px;
+    }
 }
 
